@@ -1,0 +1,56 @@
+Pleos Road Alert 2026-11-07
+APK SHA-256 41e56716af847b7322349194983c76f80421f92123622d7d4eacb6dacf180351
+apksigner verify v2: true
+> Task :app:testDebugUnitTest
+
+BUILD SUCCESSFUL in 38s
+40 actionable tasks: 40 executed
+JUnit tests=3, failures=0, errors=0
+
+server-tests.log
+HTTP_TRACE {"createdAt": 1794011879648, "sentAt": 1794011879648, "receivedAt": 1794011879728, "testClientReceivedAt": 1794011879740}
+test_two_clients_long_poll_lost_ack_restart_and_resolution (test_events.HttpParticipants.test_two_clients_long_poll_lost_ack_restart_and_resolution) ... ok
+test_concurrent_identical_report_and_no_tracks (test_events.RoadRules.test_concurrent_identical_report_and_no_tracks) ... ok
+test_direction_and_approach (test_events.RoadRules.test_direction_and_approach) ... ok
+test_expiry_cannot_refresh_or_resurrect_and_receipts_purge (test_events.RoadRules.test_expiry_cannot_refresh_or_resurrect_and_receipts_purge) ... ok
+test_freshness_accuracy_and_unknown_network (test_events.RoadRules.test_freshness_accuracy_and_unknown_network) ... ok
+test_merged_but_location_and_origin_immutable (test_events.RoadRules.test_merged_but_location_and_origin_immutable) ... ok
+test_replay_conflict_and_owner_only_terminal_transitions (test_events.RoadRules.test_replay_conflict_and_owner_only_terminal_transitions) ... ok
+test_reverse_road_and_distance (test_events.RoadRules.test_reverse_road_and_distance) ... ok
+test_weak_signals_and_simulated_deployment_remain_separate (test_events.RoadRules.test_weak_signals_and_simulated_deployment_remain_separate) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 3.263s
+
+OK
+
+
+device-full.log
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+APK_TO_PEER d2e63e18-6a97-4721-9b7b-db9c7cbd0085 1794011816667 1794011818837
+PEER_TO_APK {'eventId': '67ab052f-d1e1-480e-9468-f5891b18831a', 'createdAt': 1794011835274, 'sentAt': 1794011835274, 'serverReceivedAt': 1794011835276, 'clientReceivedAt': 1794011832453, 'viewDrawnAt': 1794011832464, 'hostCreateToDrawLogMs': 94.0}
+APK_OFFLINE_RETRY_AND_CANCEL PASS
+PASS
+
+
+device-final.log
+ERROR: null root node returned by UiTestAutomationBridge.
+APK_TO_PEER 50c9cd28-23b4-4c7b-935e-80a7e174700b 1794012118530 1794012120814
+PEER_TO_APK {'eventId': 'fef4d1ea-c0ee-44be-b94c-282566529d9e', 'createdAt': 1794012137133, 'sentAt': 1794012137133, 'serverReceivedAt': 1794012137134, 'clientReceivedAt': 1794012134307, 'viewDrawnAt': 1794012134318, 'hostCreateToDrawLogMs': 110.0}
+APK_OFFLINE_RETRY_AND_CANCEL PASS
+PASS
+
+
+delivery-e2e.log
+APK_TO_PEER 6d7241c8-f089-425c-8dc2-3b4636ebb6dc 1794012407389 1794012409572
+PEER_TO_APK {'eventId': 'c7af233c-6fc2-41cd-b664-b0aef81d2868', 'createdAt': 1794012427210, 'sentAt': 1794012427210, 'serverReceivedAt': 1794012427212, 'clientReceivedAt': 1794012424399, 'viewDrawnAt': 1794012424415, 'hostCreateToDrawLogMs': 156.0}
+ERROR: could not get idle state.
+APK_OFFLINE_RETRY_AND_CANCEL PASS
+PASS
+
+
+delivery-inputs.log
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+LANDSCAPE OK
+LIVE UNMAPPED UI OK
+FRAMEWORK_LOCATION GNSS ±5 m · 방향 0° · 0초 전 측정
